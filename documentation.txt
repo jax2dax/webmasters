@@ -1,0 +1,56 @@
+npx create-next-app@latest .  //next js framework with tailwind, and ts
+npx shadcn@latest init        // external library 
+npm install next-themes        // for darkmode toggle 
+npx shadcn@latest add button    // button component from shad cn
+lucide react- 
+npx shadcn@latest add dropdown-menu   //drop down bar from shadcn
+
+
+
+
+
+
+
+
+
+
+@import "tailwindcss";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --card:black;
+  --card-foreground:white;
+  --primary: black;
+  --primary-foreground: white;
+
+}
+.dark {
+  --background: #171717;
+  --foreground: #ffffff;
+
+  --card:#000000;
+  --card-foreground:rgb(0, 0, 0);
+  --primary:white;
+  --primary-foreground:black;
+}
+
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--foreground);
+  font-weight: bold;
+  
+
+}
