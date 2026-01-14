@@ -42,13 +42,13 @@ const  Navbar = () => {
             <ModeToggle />
             </nav>
             {/**mobile nav */}
-            <div className={`fixed top-0 left-0 h-full w-3/5 flex flex-col sm:hidden   px-0  gap-4  transform transition-transform duration-300 
+            <div className={`fixed top-0 left-0 h-full w-3/5 flex flex-col sm:hidden  bg-background px-0  gap-4  transform transition-transform duration-300 
                     ${menuOpen ? "translate-x-0 glass " : " -translate-x-full "}`} > 
 
                     <button onClick={() => setMenuOpen(false)} className="sm:hidden top-0 right-0 fixed btn1">Close</button>
-                    <div className=" my-20 flex flex-col bg-amber-500 gap-4 ">
+                    <div className=" my-20 flex flex-col gap-4 "> {/** bg-amber-500 */}
                         {navItems.map((items)=>(
-                            <div key={items.label} className="  px-1 py-3 [backdrop-filter:blur(10px)] bg-green-400 w-2/3 ">
+                            <div key={items.label} className="  px-1 py-3 [backdrop-filter:blur(10px)] w-2/3 "> {/**bg-green-400  */}
                                 <Link
                                     key={items.label}   
                                     href={items.href}  
