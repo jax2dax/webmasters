@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"; //darkmode
 import Navbar from "@/components/Navbar";   //Nav bar
+// Supports weights 100-900
+import '@fontsource-variable/public-sans'; //font
 
 
 const geistSans = Geist({

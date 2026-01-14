@@ -4,6 +4,7 @@ npm install next-themes        // for darkmode toggle
 npx shadcn@latest add button    // button component from shad cn
 lucide react- 
 npx shadcn@latest add dropdown-menu   //drop down bar from shadcn
+npm install @fontsource-variable/public-sans   // imported public sans font by google     url - https://fontsource.org/fonts/public-sans/install
 
 
 

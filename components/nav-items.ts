@@ -5,13 +5,15 @@ import {
   Phone,
   Briefcase,
   GraduationCap,
+  Compass 
 } from "lucide-react"
 
 export const navItems = [
+ 
   {
-    label: "About",
-    href: "/about",
-    icon: Info,
+    label: "Explore",
+    href: "/explore",
+    icon: Compass,
   },
 {
     label: "Services",
@@ -28,6 +30,12 @@ export const navItems = [
     href: "/contact",
     icon: Phone,
   },
+   {
+    label: "About",
+    href: "/about",
+    icon: Info,
+  },
+  
 ]
 
 
