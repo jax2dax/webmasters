@@ -1,4 +1,4 @@
-"use client"  //from shadcn documentation
+"use client"  //content from shadcn documentation
 
 import * as React from "react"
 import { ThemeProvider as NextThemesProvider } from "next-themes"
