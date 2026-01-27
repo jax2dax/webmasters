@@ -1,0 +1,294 @@
+"use client"
+import "@/styles/pack.css"
+import Folder from '@/components/Folder'
+
+import { useEffect, useRef } from "react"  ;
+import { ReactLenis } from 'lenis/react'
+import gsap from 'gsap'
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
+import Image from "next/image";
+
+import docCartoon from '../public/health/cartoondocimg.avif'
+import earpodimg from '../public/health/earpodimg.avif'
+import docs3img from '../public/health/docs3img.jpg'
+import moneygiveimg from '../public/health/moneygiveimg.jpg'
+import twopplcircle from '../public/health/twopplcircle.png'
+import familyimg from '../public/health/familyimg.jpg'
+import Logo from "@/components/Logo"
+
+
+//image gallery
+import CircularGallery from '../components/CircularGallery'
+
+import {
+ ShieldPlus,
+ HeartHandshake,
+ Activity,
+ Lightbulb,
+ Siren
+} from "lucide-react"  //icons
+
+gsap.registerPlugin(ScrollTrigger);
+const page = () => {
+
+  const i1Ref = useRef(null);
+    const i2Ref = useRef(null);
+      const i3Ref = useRef(null);
+      const txt1Ref = useRef(null);
+      const txt2Ref = useRef(null);
+      const txt3Ref = useRef(null);
+      const txt2NonMovingRef = useRef(null);
+
+      const c1Ref = useRef(null);
+      const txt4Ref = useRef(null);
+
+      const solotxtRef = useRef(null);
+      
+
+
+
+  useGSAP(()=>{
+
+    const image1 = i1Ref;
+    const image2 = i2Ref;
+    const image3 = i3Ref;
+    gsap.to(txt1Ref.current,{
+      scrollTrigger:{
+        trigger:i1Ref.current,
+        toggleActions:"restart pause reverse pause",
+        //start: "top center"  //trigger viewport 
+        markers:false,
+        scrub:true,
+        pin:true,
+        snap:1,
+        
+      },
+      y:-500,
+      rotation:0,
+      duration:4,
+      
+      
+    });
+    //2nd text
+    gsap.to(txt3Ref.current,{
+      scrollTrigger:{
+        trigger:i2Ref.current,
+        toggleActions:"restart pause reverse pause",
+        //start: "top center"  //trigger viewport 
+        markers:false,  //test
+        scrub:true,
+        pin:true,
+        snap:1,   //snap when stopped
+        
+      },
+      y:-400,
+      rotation:0,
+      duration:3,
+      
+      
+    });
+
+gsap.to(txt2Ref.current,{
+      scrollTrigger:{
+        trigger:i3Ref.current,
+        toggleActions:"restart pause reverse pause",
+        //start: "top center"  //trigger viewport 
+        markers:false,  //test
+        pin:true,
+        scrub:true,
+        snap:1,
+        
+      },
+      y:-600,
+      rotation:0,
+      duration:1.7,
+      
+      
+    });
+    gsap.to(txt4Ref.current,{
+      scrollTrigger:{
+        trigger:i3Ref.current,
+        toggleActions:"restart pause reverse pause",
+        //start: "top center"  //trigger viewport 
+        markers:false,
+        scrub:true,
+      },
+      opacity:1,
+      y: 20,
+      duration:5,
+      scale:2
+    });
+    //solotxt //affordable 
+    
+    gsap.to(solotxtRef.current,{
+      scrollTrigger:{
+        trigger:solotxtRef.current,
+        toggleActions:"restart pause reverse pause",
+        start: "center center",  //trigger viewport 
+        end:"top top",
+        markers:true,
+        scrub:true,
+        snap:1,
+      },
+      
+      y: 500,
+      xPercent:40,
+      duration:5,
+      textColor:"#000814",
+      backgroundColor:"#000814"
+     
+    });
+    // //2nd text that gets stuck
+    // gsap.to(txt3Ref.current,{
+    //   scrollTrigger:{
+    //     trigger:i3Ref.current,
+    //     toggleActions:"restart pause reverse pause",
+    //     //start: "top center"  //trigger viewport 
+    //     markers:true,
+    //     pin:txt3Ref.current,
+        
+    //   },
+    //   y:0,
+    //   rotation:0,
+    //   duration:4,
+      
+      
+    // });
+
+
+
+
+    // ScrollTrigger.create({
+    //   trigger: i1Ref.current,
+    //   start: "top top",
+    //   end: "50vh",
+    //   pin: true,
+    //   pinSpacing: false
+    // });
+
+    // gsap.fromTo(
+    //   txt1Ref.current,
+    //   { y: "100vh", opacity: 0 },
+    //   {
+    //     y: 0,
+    //     opacity: 1,
+    //     scrollTrigger: {
+    //       trigger: txt1Ref.current,
+    //       start: "top bottom",
+    //       end: "center center",
+    //       scrub: true,
+    //     },
+    //   }
+    // );
+
+
+
+
+  });
+
+
+    
+
+
+  return (
+    <>
+    <ReactLenis root />
+    <div className="z-30 w-full h-100% overflow-hidden">
+          <div className="max-sm:flex-col m-0 bg-black" ref={i1Ref}>
+            <Image src={earpodimg} height={0} width={100} alt="health care images" unoptimized quality={100}   className="m-0 heroimg i1 " />  {/**border-solid border-2 testing */}
+            <div ref={txt1Ref} className="absolute left-1/2 max-sm:left-0  m"><h1 className="text-5xl" style={{fontSize:"5rem"}}>  <Logo /><span className="text-green-800">Health</span> <span  className="text-green-400 ">shields</span > <br /></h1>Text11</div>
+          </div>
+          
+          <div className="max-sm:flex-col" ref={i2Ref}>
+            <Image src={familyimg} height={0} width={100} alt="health care images" unoptimized quality={100}  className="heroimg i1" />
+            <div className="absolute left-1/2 max-sm:left-2   "> {/**border-solid border-2 */}
+            <div ref={txt3Ref} className="flex flex-row-reverse gap-3 justify-evenly max-sm:flex-col" >
+              <h1 >We <span  className="text-green-400 ">CARE</span > about your <span  className="text-green-400">HEALTH</span ></h1>
+              <div className=" flex  justify-center items-center"><HeartHandshake  width={200} height={200} className="  text-green-600 " ref={txt2Ref} /> {/**border-solid border-2 */}
+           </div>
+              </div>
+               </div>
+          </div>
+          <div ref={i3Ref} className="max-sm:flex-col" >
+            <Image src={docs3img} height={0} width={100} alt="health care images" unoptimized quality={100}  className="heroimg i1" />
+          <div className="absolute left-1/2  -translate-x-1/2  max-sm:flex-col  "> {/**border-solid border-2 //to check */}
+          
+           <ShieldPlus  width={200} height={200} className="ml-2  text-blue-600 " ref={txt2Ref} /> {/**border-solid border-2 */}
+           </div>
+        <div ref={txt4Ref} className="absolute left-1/2 top-55/100 ml-1 mx-auto text-green-600 text-f -translate-x-1/2 opacity-0 "><h1 className=" text-black  ">
+         <span className="text-black">Find Your Essential </span>  <span  className="text-blue-400 ml-4 bg-black rounded-2xl px-2"> shield</span ></h1>
+          </div>
+          </div>
+      
+     
+    </div>
+
+
+    <section className="container " ref={c1Ref}>
+        
+<div className="flex flex-wrap flex-row w-full max-sm:flex-col max-sm:w-full overflow-hidden">
+  <div className="bg-  w-3/5 py-4 pb-8  border-2 border-solid rounded-sm pl-10 bg-secondary max-sm:w-full max-sm:h-auto" >
+    <h1>FAIR SERVICE FOR ALL</h1>
+    <div className="big-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia minus sint at tempora nisi veritatis expedita nihil illo, optio sequi quisquam asperiores ducimus, ex earum corrupti, repellat exercitationem similique.</div>
+  </div>
+
+  {/** */}
+        <div style={{ height: '100px', position: 'relative'  }} className=" folder-adjust w-auto ">
+        <Folder size={1.5} color="#22c55e" className="custom-folder"/></div>
+
+</div>
+    </section>
+
+
+    <section className="container overflow-visible max-sm:overflow-hidden " >
+<div className="text-box text-4xl big-text leading-13 gap-1 overflow-visible max-sm:m-4">
+We believe that health care accessability is a neccessity, not a previlage or a luxury. Our mission is to bridge this gap and help you and the community to recieve the reliable services you deserve.
+By connecting you to health care centers that both meet your needs and fit your budget . We plan Every Day to deliver reliable service options, giving you options to choose based on your budget plan, 
+making it  <div className="m-0 p-0 z-30 text-6xl rounded-b-3xl ml-3 pl-4 py-4" ref={solotxtRef}>
+  <span className="text-green-500 " >Affordable</span><span className="text-green-400 ">!</span>
+  </div>
+  
+</div>
+<div className="image-box max-sm:rounded-0 mb-0">
+  <Image src={moneygiveimg} height={0} width={100} alt="health care images" unoptimized quality={100}  className="" />
+</div>
+
+
+    </section>
+      
+    <section className=" flex z-1 max-sm:overflow-hidden c2 ">
+      <div className="text-box text-6xl flex big-text max-sm:overflow-hidden leading-13 gap-1 max-sm:m-4  justify-center items-center ">
+       <h1>Your Path to Wellness Made </h1><div className="sm:hidden text-2xl text-green-400"> Affordable  </div> 
+      </div>
+      <div className="image-box"></div>
+    </section>
+
+
+     <section className="flex w-full overflow-x-hidden widthadjust-gallery h-full ">
+       </section>
+       {/**Separe div(not a section) for the gallery */}
+    <div className="z-1 container border-solid border-2 ">
+        <div style={{ height: '600px', position: 'relative' }}>
+          <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02} scrollSpeed={2} />
+          <div className="flex w-auto justify-center my-0 ">
+              <Lightbulb height={140} width={140} color="#FFAC00" className="my-0"/>
+          </div>
+        </div>
+        
+    </div>
+    </>
+  )
+}
+
+export default page;
+/*
+ const tl = gsap.timeline({
+      scrollTrigger:{
+        trigger:i1Ref.current,
+        start:"top top",
+        end:"bottom bottom",
+        scrub:true,
+      }
+    });
+*/

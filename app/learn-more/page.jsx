@@ -15,7 +15,7 @@ const page = () => {
                   target="_blank"></a>
           </div>
           <div className='image-box'>
-            <Image src={docCartoon} width={100} height={0} alt='health images'></Image>
+            <Image src={docCartoon} width={100} height={0} alt='health images' quality={100} unoptimized></Image>
           </div>
     </section>
 
@@ -34,7 +34,7 @@ const page = () => {
         </div>
         
         <div className='image-box'>
-            <Image src={plusimg} width={100} height={0} alt='health images'></Image>
+            <Image src={plusimg} width={100} height={0} alt='health images' unoptimized ></Image>
         </div>
     </section>
 

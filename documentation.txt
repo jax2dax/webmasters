@@ -7,50 +7,74 @@ npx shadcn@latest add dropdown-menu   //drop down bar from shadcn
 npm install @fontsource-variable/public-sans   // imported public sans font by google     url - https://fontsource.org/fonts/public-sans/install
 npm  shadcn@latest add card      // card from shadcn 
 npx shadcn@latest add badge             //badge from shadcn 
+npx shadcn@latest add accordion            //accordion dropdown from shadcn 
+
+1/26/226
+npx shadcn@latest add input-group   // a search label to be used from shadcn 
+
+compact card setup
+--npx shadcn@latest add @react-bits/MagicBento-JS-CSS       >>terminal
+MagicBento.CSS    -additional styling and color config
+MagicBento.jsx    -the component that is imported, and actual card architecture
+site name- reactbits
+source-url- https://www.reactbits.dev/components/magic-bento
+
+##GSAP 
+ npm i gsap @gsap/react    //Gsap
+ A library to animate advanced animations with tools and good documentation
+in addition to vanilla js , also supports react (Gsap/react)
+
+
+##lucide-react 
+A collection of different Icons in the form of React components - react components
+-Used for every ICONS in the site
+
+
+ ##Lenis
+ npm i lenis    //lenis
+ simple import({ ReactLenis })  , to enable smooth scrolling by adding <ReactLenis root /> at the begining a returning component
+
+$$ UI/UX-complete components from libraries
+
+
+$folder icon from react bits
+npx shadcn@latest add @react-bits/Folder-JS-CSS 
+link-https://www.reactbits.dev/components/folder
+ 
+$ CircularGallery from reactbits
+npx shadcn@latest add @react-bits/CircularGallery-JS-CSS  
+link - https://www.reactbits.dev/components/circular-gallery?borderRadius=0.18&bend=10
+imports CircularGallery.jsx and CircularGallery.css components 
+used at 
+
+
+
+//data render;
+Data storage and editing file-  @/lib/servicesList.data.jsx
+ -
+ CardImg.jsx turned to take props, to make it easier to mapp trough array of datas
+ 
+ CardDataRender.jsx - uses CardImg to map the data, through the <CardImg /> props ,
+ 
 
 
 
 
 
+//images used
+redheartimg -- https://www.medifind.com/news/post/problems-us-healthcare-system
+docs3img  - https://www.cflowapps.com/bpm-healthcare/
+earpod  - https://unsplash.com/s/photos/health-care
+affordstatsimg - https://www.kff.org/health-costs/americans-challenges-with-health-care-costs/ 
+twopplcircle -   https://www.inter-cert.net/news/a-new-era-of-healthcare-inside-iso-7101-the-first-international-standard-for-healthcare-quality-managment/
+givingmoneyimg -https://www.howtomoney.com/giving-away-money-will-make-you-richer/
+familyimg -     https://www.istockphoto.com/photos/community-health-care
 
-
-@import "tailwindcss";
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-
-  --card:black;
-  --card-foreground:white;
-  --primary: black;
-  --primary-foreground: white;
-
-}
-.dark {
-  --background: #171717;
-  --foreground: #ffffff;
-
-  --card:#000000;
-  --card-foreground:rgb(0, 0, 0);
-  --primary:white;
-  --primary-foreground:black;
-}
-
-
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-h1, h2, h3, h4, h5, h6 {
-  color: var(--foreground);
-  font-weight: bold;
-  
-
-}
+urls used in 
+ https://thehill.com/wp-content/uploads/sites/2/2022/08/CA_healthcare_08052022istock-e1706717522500.jpg?strip=1
+       https://officersurvey.com/wp-content/uploads/2023/03/community-policing-1-1.jpeg 
+       https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCuqMCcqj8n6q6qGbDIGGLdQlfx9IwKp9I8w&s
+       https://media.istockphoto.com/id/543351810/photo/your-health-in-our-hands.jpg?s=612x612&w=0&k=20&c=7BH8bzadRsJY6U-doPfgkKlralnCZ38Z9S5G6-1niA0=
+       https://www.outcomes.com/hs-fs/hubfs/vv.jpg?width=1859&height=690&name=vv.jpg 
+       https://www.advicescout.com/wp-content/uploads/2023/07/role-of-research-scientific-advancement.png
+       https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWkir6XY2ZOLsWmBXausTen9DQ0exmTy7-GA&s

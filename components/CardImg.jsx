@@ -1,3 +1,5 @@
+//changed the card boiler to accept prps, to render variable data as a map array
+
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import {
@@ -7,42 +9,64 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-export function CardImage() {
+} from "@/components/ui/card"   //base card
+
+//to add th eaccordion inside the card
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"  //accordion from shad cn (added for description)
+
+export function CardImage(  //custom props  
+{name,
+badge,
+image,
+description,
+contact,
+email,
+address,
+link}
+) {
+
+  
+
+  
   return (
-    <Card className="relative mx-auto w-full max-w-sm pt-0">
+    <div className=" ">
+    <Card className="relative grow-card mx-auto min-w-sm w-full max-w-sm pt-0">
       <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
       <img
-        src="https://avatar.vercel.sh/shadcn1"
-        alt="Event cover"
+        src={image}       
+        alt={name}
         className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
       />
       <CardHeader>
         <CardAction>
-          <Badge variant="secondary">Featured</Badge>
+          <Badge variant="secondary">{badge}</Badge>
         </CardAction>
-        <CardTitle>Design systems meetup</CardTitle>
+        <CardTitle>{name}</CardTitle>
         <CardDescription>
-          A practical talk on component APIs, accessibility, and shipping
-          faster.
-          A practical talk on component APIs, accessibility, and shipping
-          faster.
-          A practical talk on component APIs, accessibility, and shipping
-          faster.
-          A practical talk on component APIs, accessibility, and shipping
-          faster.
-          A practical talk on component APIs, accessibility, and shipping
-          faster.
-          A practical talk on component APIs, accessibility, and shipping
-          faster.A practical talk on component APIs, accessibility, and shipping
-          faster.A practical talk on component APIs, accessibility, and shipping
-          faster.A practical talk on component APIs, accessibility, and shipping
-          faster.
+          
+          {/**  DESCRIPTION */}
+          <Accordion type="single" collapsible defaultValue="item-1">
+            <AccordionItem value="item-1">
+              <AccordionTrigger>More...</AccordionTrigger>
+              <AccordionContent>
+                {description}{contact} {email}{address}
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+          {/**---------------- */}
+
         </CardDescription>
       </CardHeader>
       <CardFooter>
-        <Button className="w-full">View Event</Button>
+        <Button className="w-full"><a href={link} target="_blank" />Visit</Button>
       </CardFooter>
     </Card>
+
+  </div>
   )
 }

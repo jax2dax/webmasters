@@ -44,6 +44,7 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+  --card-title:var(--card-title)
 }
 
 :root {
@@ -56,7 +57,7 @@
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(98.511% 0.00011 271.152);
-  --secondary: rgb(38, 135, 101);/*nav bg*/
+  --secondary: oklch(58.117% 0.11689 165.691);/*nav bg*/
   --secondary-foreground: oklch(18.338s% 0.00163 16.6);/*nav text*/
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
@@ -88,6 +89,7 @@
   --text-body:black;
   --text-head:black;
   --glowx:rgb(26, 66, 46);
+  --card-title:rgb(8, 245, 75);
   
 }
 
@@ -132,6 +134,7 @@
   --text-body:black;
   --text-head:black;
   --glowx:rgb(29, 88, 49);
+  --card-title:white;
 
   
 }
@@ -165,17 +168,7 @@
 body {
   font-family: 'Public Sans Variable', sans-serif;
 }
-/*glass effect/blur*/
-.glass{
-/*   
-   backdrop-filter: blur(80px);           
-  -webkit-backdrop-filter: blur(60px);    
-  background-color:rgba(138,138 , 138, 0.851);
-  
-  border-radius: var(--radius);           
-  border: 1px solid rgba(255, 255, 255, 0.2); 
-   */
-}
+
 h1{
   color:var(--);
 
@@ -188,21 +181,31 @@ h1, h2 {
 h2 {
   font-size: 3rem;
 }
+h4 {
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  font-size: clamp(3rem, 6rem, 6rem);
+}
 .container {
   position:relative;
+  margin-left : auto;
+  margin-right: auto;
+  margin: 0 auto;
+  max-width: 1280px;
   width:100%;
   height:100%;
   min-height: 100svh;
-   background-image: linear-gradient(to right rgb(41, 65, 144), rgb(0, 115, 255)); 
+   
   background-color: var(--background);
 
-  box-shadow:  2px 2px 15px black
+  box-shadow:  0px 0px 3px rgba(211, 211, 211, 0.345)
 
   
 }
 .c2 {
+  margin: 0 auto;
   background-color: var(--body-background); 
-  box-shadow:  2px 2px 15px var(--glowx);
+  box-shadow:  0px 0px 3px rgb(131, 131, 131)
 }
  .glow-nav  {
   transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -264,6 +267,8 @@ h2 {
 
  section{
   display: flex;
+  justify-content: center;
+  align-items: center;
  }
 
 
@@ -275,3 +280,86 @@ h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     object-fit: cover;
   }
+  /* slighly move up and grow transition for cards */
+  .grow-card{
+    transition: transform 0.4s ease  ;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1) ;
+  }
+  .grow-card:hover {
+    transform: translateY(-5px)  ;
+    scale: 1.03;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.15);
+  }
+
+  /*foler adjustment*/
+  @media (max-width: 580px){
+    .folder-adjust {
+    margin-left: 45%;
+    margin-top: 170px;
+  }
+  }
+  
+   @media (min-width: 900px){
+    .folder-adjust {
+    margin-left: 100px;
+    margin-top: 140px;
+    }
+  }
+   @media (min-width: 100px){
+    .folder-adjust {
+    margin-left: 170px;
+    margin-top: 140px;
+    }
+  }
+  /*images on the home page*/
+.heroimg {
+  height: 100vh;
+  width: 100dvw;
+  object-fit: cover;
+  opacity: 1;
+}
+.glass{
+  backdrop-filter: rgba(2,2,2,0) ;
+}
+/* logo animation*/
+.glow-logo {
+  transition: 2s ease ;
+}
+.glow-logo:hover {
+  box-shadow: 2px 4px 3px rgb(22, 203, 134);
+}
+.adjust-mobile-nav {
+  width: 100dvw;
+}
+
+/*more text adgjust used in homepage*/
+
+.big-text {
+  font-size: 2.1rem;
+}
+@media (max-width:580){
+
+.big-text {
+  font-size: 1.2rem;
+}
+}
+@media (min-width:900){
+  .big-text {
+  font-size: 1.6rem;
+}
+}
+.widthadjust-gallery {
+  width: 100%;
+}
+.add-visible-overflow {
+  z-index: 1;
+}
+/*hidding scroll bar on explore page*/
+.scroll-adjust {
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+/*fixing container to containe the image that is oversized by default*/
+.object-fit-img-adjust {
+  object-fit: contain;
+}
