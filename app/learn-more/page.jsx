@@ -49,6 +49,49 @@ const page = () => {
           <Image src={plusimg} width={100} height={0} alt='health images'></Image>
         </div>
     </section>
+
+
+    <section className='container '>
+      <div className='image-box'>
+          <Image src={plusimg} width={100} height={0} alt='health images'></Image>
+        </div>
+        <div className='text-box'>
+          <h2>Value and The Shield</h2>
+          We act as your professional filter, shielding you from the unreliable standard care and hidden Medical fees.
+          </div>
+        
+    </section>
+    <section className='container' id='value'>
+      <div className='image-box'>
+          <Image src={plusimg} width={100} height={0} alt='health images'></Image>
+        </div>
+        <div className='text-box'>
+          <h2>Value and The Shield</h2>
+          We act as your professional filter, shielding you from the unreliable standard care and hidden Medical fees.
+          </div>
+        
+    </section>
+    <section className='container' id='research'>
+      <div className='image-box'>
+          <Image src={plusimg} width={100} height={0} alt='health images'></Image>
+        </div>
+        <div className='text-box'>
+          <h2>The Research Process</h2>
+          We are fully aware that the information we provide should be helpful, authentic and trusted.
+          To achive this, our <span className="text-green-400">Research</span> team conducts rigorous background checks on every 
+          facility you see on our page, to ensure they meet national safety, quality and pass our value-check.
+          <h2>Behind the scenes</h2>
+          <p id="evaluation">
+            We dont just evaluate based on big names and popularity, we dig deep into websites and perform a series of inspections that
+             will help us evaluate if it lives upto its name. Our evaluation check doesnt stop there, we also try to contact patients and
+              customers who used their services in the past. We ask simple questions over phone calls, send them sms/email or contact 
+              them on their social media. Our of the attempt to connect works about 2% of the time. Currently we are performing various researches
+               and analysis to transform our connection approch from attempt to guaranteed information exchange. 
+               We cross refer patient's complaints with official medical and health care board </p>
+          
+          </div>
+        
+    </section>
     </>
   )
 }

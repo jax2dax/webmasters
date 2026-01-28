@@ -317,6 +317,7 @@ h4 {
   width: 100dvw;
   object-fit: cover;
   opacity: 1;
+  border-radius: 0;
 }
 .glass{
   backdrop-filter: rgba(2,2,2,0) ;
@@ -362,4 +363,15 @@ h4 {
 /*fixing container to containe the image that is oversized by default*/
 .object-fit-img-adjust {
   object-fit: contain;
+}
+.fade {
+  opacity: 0.78;
+}
+.gsap-adjust-ani {
+  color:red;
+  scale: 2;
+  transform: rotate(50);
+}
+.list-b {
+  list-style: disc;
 }

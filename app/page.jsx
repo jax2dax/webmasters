@@ -9,6 +9,8 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import Image from "next/image";
 
+import { Separator } from "@/components/ui/separator"
+
 import docCartoon from '../public/health/cartoondocimg.avif'
 import earpodimg from '../public/health/earpodimg.avif'
 import docs3img from '../public/health/docs3img.jpg'
@@ -17,6 +19,9 @@ import twopplcircle from '../public/health/twopplcircle.png'
 import familyimg from '../public/health/familyimg.jpg'
 import Logo from "@/components/Logo"
 
+//Animations //lottie
+import  Lottie from 'lottie-react';
+import redheart from '../lib/animation/redheart.json'
 
 //image gallery
 import CircularGallery from '../components/CircularGallery'
@@ -127,21 +132,22 @@ gsap.to(txt2Ref.current,{
         toggleActions:"restart pause reverse pause",
         start: "center center",  //trigger viewport 
         end:"top top",
-        markers:true,
+        markers:false,
         scrub:true,
         snap:1,
+        onLeave:()=> solotxtRef.current.classList.add("gsap-adjust-ani")
       },
       
-      y: 500,
+      y: 500, 
       xPercent:40,
       duration:5,
       textColor:"#000814",
-      backgroundColor:"#000814"
+      backgroundColor:"#000814",
      
     });
     // //2nd text that gets stuck
     // gsap.to(txt3Ref.current,{
-    //   scrollTrigger:{
+    //   scrollTrigger:{ 
     //     trigger:i3Ref.current,
     //     toggleActions:"restart pause reverse pause",
     //     //start: "top center"  //trigger viewport 
@@ -197,12 +203,14 @@ gsap.to(txt2Ref.current,{
     <div className="z-30 w-full h-100% overflow-hidden">
           <div className="max-sm:flex-col m-0 bg-black" ref={i1Ref}>
             <Image src={earpodimg} height={0} width={100} alt="health care images" unoptimized quality={100}   className="m-0 heroimg i1 " />  {/**border-solid border-2 testing */}
-            <div ref={txt1Ref} className="absolute left-1/2 max-sm:left-0  m"><h1 className="text-5xl" style={{fontSize:"5rem"}}>  <Logo /><span className="text-green-800">Health</span> <span  className="text-green-400 ">shields</span > <br /></h1>Text11</div>
+            <div ref={txt1Ref} className="absolute left-1/2 max-sm:left-0  m"><h1 className="text-5xl" style={{fontSize:"5rem"}}>  <Logo /><span className="text-green-800">Health</span> <span  className="text-green-400 ">shields</span > <br /></h1>
+            <Separator /><ul className="flex list-b gap-6.5 mx-3 bg-black/30 max-w-1/2 text-green-200"><li>Accurate </li><li>Reliable </li><li>trusted</li></ul><h3>Explore</h3></div>
           </div>
           
           <div className="max-sm:flex-col" ref={i2Ref}>
-            <Image src={familyimg} height={0} width={100} alt="health care images" unoptimized quality={100}  className="heroimg i1" />
+            <Image src={familyimg} height={0} width={100} alt="health care images fade" unoptimized quality={100}  className="heroimg i1" />
             <div className="absolute left-1/2 max-sm:left-2   "> {/**border-solid border-2 */}
+            
             <div ref={txt3Ref} className="flex flex-row-reverse gap-3 justify-evenly max-sm:flex-col" >
               <h1 >We <span  className="text-green-400 ">CARE</span > about your <span  className="text-green-400">HEALTH</span ></h1>
               <div className=" flex  justify-center items-center"><HeartHandshake  width={200} height={200} className="  text-green-600 " ref={txt2Ref} /> {/**border-solid border-2 */}
@@ -211,7 +219,7 @@ gsap.to(txt2Ref.current,{
                </div>
           </div>
           <div ref={i3Ref} className="max-sm:flex-col" >
-            <Image src={docs3img} height={0} width={100} alt="health care images" unoptimized quality={100}  className="heroimg i1" />
+            <Lottie animationData={redheart} loop className="heroimg"/>
           <div className="absolute left-1/2  -translate-x-1/2  max-sm:flex-col  "> {/**border-solid border-2 //to check */}
           
            <ShieldPlus  width={200} height={200} className="ml-2  text-blue-600 " ref={txt2Ref} /> {/**border-solid border-2 */}
@@ -245,7 +253,7 @@ gsap.to(txt2Ref.current,{
 <div className="text-box text-4xl big-text leading-13 gap-1 overflow-visible max-sm:m-4">
 We believe that health care accessability is a neccessity, not a previlage or a luxury. Our mission is to bridge this gap and help you and the community to recieve the reliable services you deserve.
 By connecting you to health care centers that both meet your needs and fit your budget . We plan Every Day to deliver reliable service options, giving you options to choose based on your budget plan, 
-making it  <div className="m-0 p-0 z-30 text-6xl rounded-b-3xl ml-3 pl-4 py-4" ref={solotxtRef}>
+making it  <div className="m-0 p-0 z-30 text-6xl rounded-b-3xl ml-0 max-sm:ml-3 -translate-x-5px pl-4 py-4" ref={solotxtRef}>
   <span className="text-green-500 " >Affordable</span><span className="text-green-400 ">!</span>
   </div>
   

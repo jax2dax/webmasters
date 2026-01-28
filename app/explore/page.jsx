@@ -5,10 +5,51 @@ import MagicBento from '@/components/MagicBento'  //compact card feature
 import docimg from '../../public/health/familyimg.jpg'
 import Image from "next/image";
 import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import PPLwave from '../../lib/animation/peoplewave'
+import { Separator } from "@/components/ui/separator"
+/**sercive Card*/
+
+import { Badge } from "@/components/ui/badge"
+import {
+  Card,
+  CardAction,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"   //base card
+
+import { CardImage2 } from "../../components/CardImg2";
+
+import smilenurse from '../../public/health/smilenurseimg.jpg'
 
 const explore = () => {
   return (
     <>
+    
+    <PPLwave />
+    <div className="flex gap-2 my-3 ">
+      <CardImage2 
+            name={"..."}
+              badge={"..."}
+              image={smilenurse}
+              description={"..."}
+              contact={"..."}
+              email={"..."}
+              address={"..."}
+              link={null} />
+            <CardImage2 
+            name={"..."}
+              badge={"..."}
+              image={smilenurse}
+              description={"..."}
+              contact={"..."}
+              email={"..."}
+              address={"..."}
+              link={null} />
+    </div>
+    
     <div className="container mx-auto  px-auto">
       <div className="hi h-100px w-full">blosso</div>
       <MagicBento 
@@ -45,6 +86,32 @@ const explore = () => {
 
       </div>
     </section>
+    <section className="container">
+      <div>
+        <h1>Help Us Grow ?</h1>
+        Health Shields Currently offer the services for our customers only based in Nevada.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio animi officia dolor non minima sed
+         exercitationem veniam fugiat perspiciatis voluptatum, accusamus maxime consectetur inventore magni quam! Laborum neque blanditiis saepe?
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis alias perferendis beatae fuga aliquam reprehenderit cum ab dolore. Mollitia
+          neque id, illum exercitationem ipsam vitae odit praesentium hic repudiandae voluptatem?
+        <Link href="/" ><Button />
+        <Separator /></Link>
+      </div>
+    </section>
+
+
+    <section className="container">
+      <div>
+        <h1>Value & The Shield</h1>
+        
+      </div>
+    </section>
+
+
+
+
+
+
 
   </div>
   
