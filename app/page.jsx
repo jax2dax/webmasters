@@ -8,6 +8,7 @@ import gsap from 'gsap'
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Separator } from "@/components/ui/separator"
 
@@ -204,7 +205,8 @@ gsap.to(txt2Ref.current,{
           <div className="max-sm:flex-col m-0 bg-black" ref={i1Ref}>
             <Image src={earpodimg} height={0} width={100} alt="health care images" unoptimized quality={100}   className="m-0 heroimg i1 " />  {/**border-solid border-2 testing */}
             <div ref={txt1Ref} className="absolute left-1/2 max-sm:left-0  m"><h1 className="text-5xl" style={{fontSize:"5rem"}}>  <Logo /><span className="text-green-800">Health</span> <span  className="text-green-400 ">shields</span > <br /></h1>
-            <Separator /><ul className="flex list-b gap-6.5 mx-3 bg-black/30 max-w-1/2 text-green-200"><li>Accurate </li><li>Reliable </li><li>trusted</li></ul><h3>Explore</h3></div>
+            <Separator /><ul className="flex list-b gap-6.5 mx-3 bg-black/30 max-w-1/2 text-green-200"><li>Accurate </li><li>Reliable </li><li>trusted</li></ul>
+            <h2 className="border-solid border-2 rounded-2xl  w-50 max-sm:max-w-3/5 flex justify-center"><Link href={"/explore"}>Explore</Link></h2></div>
           </div>
           
           <div className="max-sm:flex-col" ref={i2Ref}>
@@ -238,10 +240,17 @@ gsap.to(txt2Ref.current,{
 <div className="flex flex-wrap flex-row w-full max-sm:flex-col max-sm:w-full overflow-hidden">
   <div className="bg-  w-3/5 py-4 pb-8  border-2 border-solid rounded-sm pl-10 bg-secondary max-sm:w-full max-sm:h-auto" >
     <h1>FAIR SERVICE FOR ALL</h1>
-    <div className="big-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quia minus sint at tempora nisi veritatis expedita nihil illo, optio sequi quisquam asperiores ducimus, ex earum corrupti, repellat exercitationem similique.</div>
+    <div className="big-text">
+      Our comitment to health equality is reflected in the <span className="text-green-300">DI</span>
+      <span className="text-yellow-400">VER</span><span className="text-red-600">SE</span> communities we serve, helping peoples with wide range of age, sex, and ethnic backgrounds.
+      We are proud to provide a platform that that allow people to be equally served regardless of their race, heritage, and identity. Respecting diversity
+      is one of our values that guide us to fullfill the needs of the community.
+      
+
+    </div>
   </div>
 
-  {/** */}
+  {/** */}s
         <div style={{ height: '100px', position: 'relative'  }} className=" folder-adjust w-auto ">
         <Folder size={1.5} color="#22c55e" className="custom-folder"/></div>
 
@@ -276,7 +285,7 @@ making it  <div className="m-0 p-0 z-30 text-6xl rounded-b-3xl ml-0 max-sm:ml-3 
      <section className="flex w-full overflow-x-hidden widthadjust-gallery h-full ">
        </section>
        {/**Separe div(not a section) for the gallery */}
-    <div className="z-1 container border-solid border-2 ">
+    <div className="z-1 container  ">
         <div style={{ height: '600px', position: 'relative' }}>
           <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02} scrollSpeed={2} />
           <div className="flex w-auto justify-center my-0 ">

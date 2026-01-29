@@ -21,7 +21,7 @@ npx shadcn@latest add input-group   // a search label to be used from shadcn
       imported animations -       Link
       redheart.json         //https://app.lottiefiles.com/animation/c1538276-6df4-4565-8534-ab609110859e?channel=web&from=download&panel=download&source=public-animation
       office.json          https://app.lottiefiles.com/animation/9b03b732-e45a-4049-9aae-46f7dbd8f5ea?channel=web&from=embed&panel=download&source=public-animation
-
+      shield             https://app.lottiefiles.com/animation/b5e7293b-da0c-4a85-af48-a58b5c6e5e13?channel=web&from=download&panel=download&source=public-animation
 compact card setup
 --npx shadcn@latest add @react-bits/MagicBento-JS-CSS       >>terminal
 MagicBento.CSS    -additional styling and color config
