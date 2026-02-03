@@ -378,3 +378,6 @@ h4 {
 .color-gradient1 {
   background-image: linear-gradient(to bottom, rgb(45, 117, 66,1),rgb(40, 129, 74) , rgb(16, 122, 78));
 }
+.no-shrink {
+  flex-shrink: 0;
+}

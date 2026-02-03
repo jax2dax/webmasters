@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "components/Logo.jsx", "app/page.jsx"  ],
+, "components/Logo.jsx", "app/page.jsx", "app/apply/page.jsx", "app/apply/page.jsx", "components/Form1.jsx"  ],
   "exclude": ["node_modules"]
 }

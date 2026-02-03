@@ -108,7 +108,7 @@ const page = () => {
                  <span className='text-green-400'>transparency </span>and <span className='text-green-400'>insights</span>.</p>
       </div>
       <div className="image-box"></div>
-      <Image src={null} />
+      <Image src={""} />
     </div>
     </>
   )

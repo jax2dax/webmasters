@@ -54,7 +54,7 @@ const  Navbar = () => {
             <div className={`fixed top-0 left-0 h-full w-5/6 flex flex-col sm:hidden z-20 bg-background px-0  gap-4  transform transition-transform duration-300 
                     ${menuOpen ? "translate-x-0 glass " : " -translate-x-full "}`} > 
 
-                    <button onClick={() => setMenuOpen(false)} className="sm:hidden top-0 right-0 fixed btn1 mr-2 mt-3 ">Close</button>
+                    <button onClick={ () => setMenuOpen(false)} className="sm:hidden top-0 right-0 fixed btn1 mr-2 mt-3 ">Close</button>
                     <div className="ml-2 mt-3 "><ModeToggle /></div>
                     <div className=" my-20 flex flex-col gap-4 "> {/** bg-amber-500 */}
                         {navItems.map((items)=>(

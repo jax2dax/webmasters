@@ -9,6 +9,8 @@ npm  shadcn@latest add card      // card from shadcn
 npx shadcn@latest add badge             //badge from shadcn 
 npx shadcn@latest add accordion            //accordion dropdown from shadcn 
 
+npx shadcn@latest add select        //Dropdows from shadcn
+npx shadcn@latest add field           //Forms from shadcn
 npx shadcn@latest add separator               //separator from shadcn
 1/26/226
 npx shadcn@latest add input-group   // a search label to be used from shadcn 
@@ -71,7 +73,7 @@ Data storage and editing file-  @/lib/servicesList.data.jsx
 
 
 
-//images used
+//images used        owner and link
 redheartimg -- https://www.medifind.com/news/post/problems-us-healthcare-system
 docs3img  - https://www.cflowapps.com/bpm-healthcare/
 earpod  - https://unsplash.com/s/photos/health-care
@@ -80,8 +82,13 @@ twopplcircle -   https://www.inter-cert.net/news/a-new-era-of-healthcare-inside-
 givingmoneyimg -https://www.howtomoney.com/giving-away-money-will-make-you-richer/
 familyimg -     https://www.istockphoto.com/photos/community-health-care
 smilenurseimg  - https://www.istockphoto.com/photos/doctor-smiling
+researchimg  - https://www.rand.org/randeurope/research/projects/2018/the-healthcare-improvement-studies-institute.html 
+healthcarekitimg    -https://depositphotos.com/illustrations/health-care.html 
+magnifyimg     -https://stockcake.com/i/magnifying-research-details_829031_841227
+valueshieldimg    -https://www.value-shield.com/
+ushealthiimg  -https://visitworld.today/blog/1805/the-american-health-care-system-an-in-depth-guide-for-expats
 
-urls used in 
+Image urls used in building
  https://thehill.com/wp-content/uploads/sites/2/2022/08/CA_healthcare_08052022istock-e1706717522500.jpg?strip=1
        https://officersurvey.com/wp-content/uploads/2023/03/community-policing-1-1.jpeg 
        https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCuqMCcqj8n6q6qGbDIGGLdQlfx9IwKp9I8w&s

@@ -18,7 +18,7 @@ export function CardSmall(
 }
 ) {
   return (
-    <Card size="sm" className="mx-auto w-full max-w-sm">
+    <Card size="sm" className="mx-auto w-full max-w-sm ">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription>

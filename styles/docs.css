@@ -1,0 +1,21 @@
+
+.head1 {
+    font-size: 3rem;
+    color: rgb(17, 117, 17);
+    font-weight: 700;
+    
+}
+.head2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.spans {
+    margin: 5px 0;
+    color: rgb(28, 168, 28);
+    scale: 1.08;
+}
+.main {
+    padding: 20px;
+    margin: 20px;
+    
+}

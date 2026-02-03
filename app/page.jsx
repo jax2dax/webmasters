@@ -34,6 +34,7 @@ import {
  Lightbulb,
  Siren
 } from "lucide-react"  //icons
+import { Button } from "@/components/ui/button";
 
 gsap.registerPlugin(ScrollTrigger);
 const page = () => {
@@ -238,10 +239,10 @@ gsap.to(txt2Ref.current,{
     <section className="container " ref={c1Ref}>
         
 <div className="flex flex-wrap flex-row w-full max-sm:flex-col max-sm:w-full overflow-hidden">
-  <div className="bg-  w-3/5 py-4 pb-8  border-2 border-solid rounded-sm pl-10 bg-secondary max-sm:w-full max-sm:h-auto" >
-    <h1>FAIR SERVICE FOR ALL</h1>
+  <div className="bg  w-3/5 py-4 pb-8  border-2 border-solid rounded-sm pl-10 bg- max-sm:w-full max-sm:h-auto" >
+    <h1 className="mb-14">FAIR SERVICE FOR ALL</h1>
     <div className="big-text">
-      Our comitment to health equality is reflected in the <span className="text-green-300">DI</span>
+      Our commitment to health equality is reflected in the <span className="text-green-300">DI</span>
       <span className="text-yellow-400">VER</span><span className="text-red-600">SE</span> communities we serve, helping peoples with wide range of age, sex, and ethnic backgrounds.
       We are proud to provide a platform that that allow people to be equally served regardless of their race, heritage, and identity. Respecting diversity
       is one of our values that guide us to fullfill the needs of the community.
@@ -259,11 +260,12 @@ gsap.to(txt2Ref.current,{
 
 
     <section className="container overflow-visible max-sm:overflow-hidden " >
-<div className="text-box text-4xl big-text leading-13 gap-1 overflow-visible max-sm:m-4">
+<div className="text-box text-4xl pr-6 big-text leading-13 gap-1 overflow-visible max-sm:m-4">
+  
 We believe that health care accessability is a neccessity, not a previlage or a luxury. Our mission is to bridge this gap and help you and the community to recieve the reliable services you deserve.
 By connecting you to health care centers that both meet your needs and fit your budget . We plan Every Day to deliver reliable service options, giving you options to choose based on your budget plan, 
 making it  <div className="m-0 p-0 z-30 text-6xl rounded-b-3xl ml-0 max-sm:ml-3 -translate-x-5px pl-4 py-4" ref={solotxtRef}>
-  <span className="text-green-500 " >Affordable</span><span className="text-green-400 ">!</span>
+  <span className="text-green-500 z-30 " >Affordable</span><span className="text-green-400 ">!</span>
   </div>
   
 </div>
@@ -276,8 +278,9 @@ making it  <div className="m-0 p-0 z-30 text-6xl rounded-b-3xl ml-0 max-sm:ml-3 
       
     <section className=" flex z-1 max-sm:overflow-hidden c2 ">
       <div className="text-box text-6xl flex big-text max-sm:overflow-hidden leading-13 gap-1 max-sm:m-4  justify-center items-center ">
-       <h1>Your Path to Wellness Made </h1><div className="sm:hidden text-2xl text-green-400"> Affordable  </div> 
+       <h1 className="z-10">Your Path to Wellness Made </h1><div className="sm:hidden text-2xl z-5 text-green-400"> Affordable  </div> 
       </div>
+      
       <div className="image-box"></div>
     </section>
 
@@ -290,6 +293,7 @@ making it  <div className="m-0 p-0 z-30 text-6xl rounded-b-3xl ml-0 max-sm:ml-3 
           <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02} scrollSpeed={2} />
           <div className="flex w-auto justify-center my-0 ">
               <Lightbulb height={140} width={140} color="#FFAC00" className="my-0"/>
+              <Button ></Button>
           </div>
         </div>
         
