@@ -248,6 +248,11 @@ h4 {
 
   position: relative;
 }
+img {
+  width:100;
+  object-fit: contain;
+  height:100;
+}
 @media (max-width: 900px) {
   section {
     flex-direction: column;
@@ -380,4 +385,55 @@ h4 {
 }
 .no-shrink {
   flex-shrink: 0;
+}
+
+/*add */
+.IMAGE-DIVIDER {
+  height:130px;
+  width:130px;
+  display: flex;
+  border: solid 2px green;
+  flex-direction: row;
+
+}
+.applyglow {
+  color: white;
+  text-shadow: 0,0,4px rgba(1,11,1,1);
+  animation: glowx 10s linear infinite;
+}
+
+@keyframes glowx {
+  0%{
+    text-shadow: 0,0,4px rgb(42, 157, 48);
+  }
+   20%{
+    text-shadow: 0,0,4px rgb(15, 64, 106);
+  }
+   40%{
+    text-shadow: 0,0,4px rgb(14, 114, 107);
+  }
+   60%{
+    text-shadow: 0,0,4px rgb(13, 135, 78);
+  }
+   80%{
+    text-shadow: 0,0,4px rgb(25, 116, 13);
+  }
+  90%{
+    text-shadow: 0,0,4px rgb(58, 162, 26);
+  }
+}
+.animatetick {
+   
+}
+.adjust-explore{
+  color: oklch(58.117% 0.11689 165.691);
+  font-family:monospace
+}
+.makeshadow {
+  
+  box-shadow: 0  0 0px 0px rgba(1,1,1,1);
+  transition: 1.4s ease ;
+}
+.makeshadow:hover {
+  box-shadow: 0 0 0 20px rgb(0, 0, 0);
 }

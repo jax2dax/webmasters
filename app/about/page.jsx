@@ -1,9 +1,10 @@
 
-
+import Added3 from "../../lib/add/add3"
 const page = () => {
   return (
     <div>
-        more about us?
+       <Added3 />
+       
         
     </div>
   )

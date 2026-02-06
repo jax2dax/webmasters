@@ -13,13 +13,23 @@ const page = () => {
     <>
     <section className='container'>
           <div className='text-box text-2xl'>
+            <h2>Reliable Medical Care</h2>
+            Access to reliable health cares is one of the most crucial thing every person should become aware of. People who have a proper health care and service provider are more likely to pay significantly less money and 
+            get the proper health care they deserve without running into barriers that prevent people from accesing medical services.
+            These reliable centers are known to perform routine screenings, regular check-up schedules, vaccinations and quality services that goes beyond treating injuries and curing illness.
+                 
+          </div>
+          <div className='image-box'>
+            <Image src={healthkit} width={100} height={0} alt='health images' quality={100} unoptimized></Image>
+          </div>
+    </section>
+    <section className='container'>
+          <div className='text-box text-2xl'>
             <h2>Health Care Awareness</h2>
-            Reliable Health care centers serve as the backbone of proper healthcare, significantly reducing barriers that prevent people from accessing 
-            medical services. Beyond treating injuries and illness, these centers give the people preventive care, such as routine screenings, vaccinations
-             and chronic disease management. These centers respect the diverse backgrounds of their patients, putting trust that extends even beyon the exam room. 
-              
-                  <a href="https://www.kff.org/medicaid/community-health-center-patients-financing-and-services/"
-                  target="_blank"></a>
+           The most relevant health system characteristics to consider are the availability and capacity of medical care providers who provide services to the uninsured for free or at reduced cost. These often include the presence and size of major safety-net providers, such as public hospitals, some academic medical centers, community health centers, and other free clinics
+            that receive private and/or public subsidies to care for the uninsured. 
+                  <p className='text-grey-400 italic mt-4'>--<Link className='text-blue-400' href="https://www.kff.org/medicaid/community-health-center-patients-financing-and-services/"
+                  target="_blank">Source</Link></p>
           </div>
           <div className='image-box'>
             <Image src={healthkit} width={100} height={0} alt='health images' quality={100} unoptimized></Image>
@@ -38,7 +48,8 @@ const page = () => {
           Health centers help increase access to crucial primary care by reducing barriers such as cost, lack of insurance, distance, and language for their patients. In doing so, health centers — also called Federally Qualified Health Centers (FQHCs) — provide substantial benefits to the country and its health care system.
 
         </div>
-        <span className='text-sm text-red-400 mt-2 '>-from <Link href="https://data.hrsa.gov">data.hrsa.gov</Link></span>
+         <p className='text-grey-400 italic mt-4'>--<Link className='text-blue-400' href="https://data.hrsa.gov"
+                  target="_blank">Source</Link> HRSA.gov</p>
         </div>
         
         <div className='image-box'>
@@ -108,7 +119,7 @@ const page = () => {
                  <span className='text-green-400'>transparency </span>and <span className='text-green-400'>insights</span>.</p>
       </div>
       <div className="image-box"></div>
-      <Image src={""} />
+      <Image src={null} />
     </div>
     </>
   )

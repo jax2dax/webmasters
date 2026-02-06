@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="flex overflow-hidden justify-evenly items-center py-[22vh] px-10 overflow-x-hidden  c2 ">
+    <div className="flex overflow-hidden justify-evenly items-center py-[22vh] px-10 overflow-x-hidden  bg-secondary ">
          <div className="border-solid-2 flex-4  ">
             <h3 className=" ">Contact</h3>
             <p>702-702-6767</p>

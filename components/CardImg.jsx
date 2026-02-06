@@ -38,9 +38,9 @@ link}
     <Card className="relative grow-card mx-auto min-w-sm w-full max-w-sm pt-0">
       <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
       <img
-        src={image}       
+        src={image}        
         alt={name}
-        className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
+        className="relative z-20 aspect-video w-full object-cover   grayscale dark:brightness-40 "
       />
       <CardHeader>
         <CardAction>

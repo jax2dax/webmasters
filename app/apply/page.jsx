@@ -3,8 +3,8 @@ import Form1 from '@/components/Form1.jsx'
 const page = () => {
     
   return (
-    <div>
-      Applicationh
+    <div className='w-full'>
+      
         <Form1 /> 
     </div>
   )

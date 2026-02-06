@@ -6,7 +6,7 @@ import {  Search  } from 'lucide-react'
 import four04 from '../public/health/four04.png'
 import { CardImage2 } from "./CardImg2";
 import serv from "../app/services/page"
-
+import Link from "next/link"
 
 export default function ServiceList() {
   const [search, setSearch] = useState("");
@@ -46,29 +46,32 @@ export default function ServiceList() {
             
             
           ))
-        ):(  <CardImage2 
+        ):
+        (  <Link href="/contact/#form"><CardImage2 
           name={"We Found Nothing"}
             badge={"..."}
-            image={four04}
+             image={four04}
             description={"Suggest services to us"}
             contact={"..."}
             email={"..."}
-            button={"er"}
+            button={null}
             address={"..."}
-            link={""} />)
+            link="/contact" />
+            </Link>)
       
           }
 
- <CardImage
-              name={"Add more?"}
+ <Link href="/contact/#form"><CardImage
+              name={"Suggest Services?"}
               badge={""}
               image={null}
-              description={"Suggest services to us"}
+              description={"Suggest services"}
               contact={""}
               email={""}
               address={""}
-              link={null}
+              link="/contact"
             />
+            </Link>
           
           
 </div>

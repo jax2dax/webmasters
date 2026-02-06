@@ -251,7 +251,7 @@ gsap.to(txt2Ref.current,{
     </div>
   </div>
 
-  {/** */}s
+  {/** */}
         <div style={{ height: '100px', position: 'relative'  }} className=" folder-adjust w-auto ">
         <Folder size={1.5} color="#22c55e" className="custom-folder"/></div>
 
@@ -278,7 +278,7 @@ making it  <div className="m-0 p-0 z-30 text-6xl rounded-b-3xl ml-0 max-sm:ml-3 
       
     <section className=" flex z-1 max-sm:overflow-hidden c2 ">
       <div className="text-box text-6xl flex big-text max-sm:overflow-hidden leading-13 gap-1 max-sm:m-4  justify-center items-center ">
-       <h1 className="z-10">Your Path to Wellness Made </h1><div className="sm:hidden text-2xl z-5 text-green-400"> Affordable  </div> 
+       <h1 className="z-10 ">Your Path to Wellness Made </h1><div className="sm:hidden text-2xl z-5 text-green-400"> Affordable  </div> 
       </div>
       
       <div className="image-box"></div>
@@ -290,11 +290,12 @@ making it  <div className="m-0 p-0 z-30 text-6xl rounded-b-3xl ml-0 max-sm:ml-3 
        {/**Separe div(not a section) for the gallery */}
     <div className="z-1 container  ">
         <div style={{ height: '600px', position: 'relative' }}>
-          <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02} scrollSpeed={2} />
-          <div className="flex w-auto justify-center my-0 ">
-              <Lightbulb height={140} width={140} color="#FFAC00" className="my-0"/>
-              <Button ></Button>
-          </div>
+            <CircularGallery bend={3} textColor="#208a53" borderRadius={0.05} scrollEase={0.02} scrollSpeed={2} />
+                <div className="flex w-20 mx-auto   makeshadow  bg-secondary rounded-full justify-center my-0 ">
+                    <Lightbulb height={140} width={140} color="#ffe600" className="my-0"/>
+                  
+                </div>
+            <div className="flex w-20 mx-auto applyglow justify-center text-[bold] -translate-y-1 text-[1.2rem]   adjust-explore text-[oklch(58.117% 0.11689 165.691)]">Explore</div>
         </div>
         
     </div>

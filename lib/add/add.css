@@ -1,0 +1,323 @@
+
+
+
+.COMMENTS{
+  max-width: 500px;
+  margin: 2rem auto;
+  font-family: sans-serif;
+}
+.COMMENT-FORM{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+input,
+textarea{
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+button{
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.ERROR{
+  color: red;
+  margin-top: 0.5rem;
+}
+.COMMENT-LIST li{
+  border-bottom: 1px solid grey;
+}
+.DATE{
+  font-size: 0.75rem;
+  color: darkgray;
+  margin-left: 0.5rem;
+}
+.COMMENTS-CARD-HEADER{
+  text-align: center;
+}
+.NAVIGATION{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.NAVIGATION button {
+  font-size: 25px;
+  padding: 24px 48px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.NAVIGATION button:hover {
+  background-color: yellowgreen;
+  color: white;
+}
+h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px
+  
+}
+p{
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.section-divider {
+  height: 100px;         
+  background-color: yellowgreen;
+  margin-top: 40px;
+}
+.section-divider2{
+  height: 900px;         
+  background-color: yellowgreen;
+  margin-top: 10px;
+}
+.CONTENT-AREA {
+  padding: 15px;
+}
+.content-area h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.MAIN-TITLE{
+  text-align: center;
+  margin: 20px auto;
+  font-size: 50px;
+}
+.SUSTAINAL-IMAGE{
+  max-width: 400px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.MAIN-PARAGRAPH{
+  text-align: center;
+  margin: 20px auto;
+  font-size: 30px;
+}
+.FOOTER-PARAGRAPH{
+  text-align: center;
+  color: white;
+}
+.FOOTER-HEADING{
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+.SUSTAINAL-IMAGE-HEADER{
+  max-width: 500px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.TOP-TAB{
+  height: 100px;         
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.TOP-TAB button{
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+.TOP-TAB button:hover {
+  color: darkgreen;
+}
+.AFFILIATES-PAGE{
+  text-align: center; 
+  max-width: 800px; 
+  margin: 60px auto;
+}
+.AFFILIATES-PAGE h2{
+  font-size: 35px; 
+  line-height: 1.7; 
+  font-style: normal; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.AFFILIATES-PAGE p{
+  font-size: 36px; 
+  font-weight: 300;
+}
+.VILLA-VALLEY-LOGO{
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.VILLA-VALLEY-LOGO img{
+  height: 100%;
+  max-width: 600px;
+  width: auto;
+  object-fit: contain;
+}
+.IMAGE-DIVIDER{
+  height: 250px;         
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.MAX-TECH-LOGO {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MAX-TECH-LOGO img {
+  height: 100%;
+  max-width: 600px;
+  width: auto;
+  object-fit: contain;
+}
+.SLING-LOGO{
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SLING-LOGO img{
+  height: 100%;
+  max-width: 600px;
+  width: auto;
+  object-fit: contain; 
+}
+.NEXULUS-LOGO{
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.NEXULUS-LOGO img{
+  height: 100%;
+  max-width: 600px;
+  width: auto;
+  object-fit: contain; 
+}
+.PROVISIONAL-LOGO{
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.PROVISIONAL-LOGO img{
+  height: 100%;
+  max-width: 600px;
+  width: auto;
+  object-fit: contain; 
+}
+.COLLATERALITY-LOGO{
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.COLLATERALITY-LOGO img{
+  height: 100%;
+  max-width: 600px;
+  width: auto;
+  object-fit: contain; 
+}
+.WESSONS-LOGO{
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.WESSONS-LOGO img{
+  height: 100%;
+  max-width: 600px;
+  width: auto;
+  object-fit: contain; 
+}
+.MISSION{
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+.MISSION .mission-text{
+  text-align: center;
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 22px;
+  line-height: 1.6;
+  font-style: italic;
+}
+.BANNER-IMAGE{
+  width: 1000px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto 0;
+  border-radius: 4px
+}
+.PLANS{
+  text-align: center;
+  padding: 30px 20px;
+}
+.future-plan{
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 22px;
+  line-height: 1.6;
+}
+.METRIC-CARD{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px black;
+}
+.METRIC-TITLE {
+  font-size: 42px;
+  margin-bottom: 30px;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  font-style: oblique;
+}
+.IMPACT-IMAGE {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+.CONTACT-US {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+
+}
+.EMAIL {
+  text-align: center;
+  font-weight: 800;
+  color: white;
+  font-size: 25px;
+
+}
+.PHONE-NUMBER {
+  text-align: center;
+  font-weight: 800;
+  color: white;
+  font-size: 25px;
+}
+.LOCATION{
+  text-align: center;
+  font-weight: 800;
+  color: white;
+  font-size: 25px;
+}
+.FOOTER-CREDITS{
+  text-align: center;
+  font-weight: 800;
+  color: white;
+  font-size: 25px;
+}
