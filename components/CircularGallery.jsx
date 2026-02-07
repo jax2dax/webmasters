@@ -336,11 +336,11 @@ class App {
     const defaultItems = [
       { image: `https://thehill.com/wp-content/uploads/sites/2/2022/08/CA_healthcare_08052022istock-e1706717522500.jpg?strip=1`, text: 'Affordable' },
       { image: `https://officersurvey.com/wp-content/uploads/2023/03/community-policing-1-1.jpeg`,text:'Trusted'},
-      { image: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCuqMCcqj8n6q6qGbDIGGLdQlfx9IwKp9I8w&s`, text: 'Inclusive' },
+      { image: `https://images.squarespace-cdn.com/content/v1/5d839357cc93cb05b54a267b/1685560892580-G10GKBNC94SCSQIVQXSJ/1.+globe+in+hands.jpg`, text: 'Inclusive' },
       { image: `https://media.istockphoto.com/id/543351810/photo/your-health-in-our-hands.jpg?s=612x612&w=0&k=20&c=7BH8bzadRsJY6U-doPfgkKlralnCZ38Z9S5G6-1niA0=`, text: 'Reliable' },
       { image: `https://www.outcomes.com/hs-fs/hubfs/vv.jpg?width=1859&height=690&name=vv.jpg`, text: 'Authentic' },
       { image: `https://www.advicescout.com/wp-content/uploads/2023/07/role-of-research-scientific-advancement.png`, text: 'Researched' },
-      { image: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWkir6XY2ZOLsWmBXausTen9DQ0exmTy7-GA&s`, text: 'Dignified' },
+      { image: `https://medcitynews.com/wp-content/uploads/sites/7/2017/03/GettyImages-536659322.jpg`, text: 'Dignified' },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);

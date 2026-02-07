@@ -245,7 +245,7 @@ gsap.to(txt2Ref.current,{
       Our commitment to health equality is reflected in the <span className="text-green-300">DI</span>
       <span className="text-yellow-400">VER</span><span className="text-red-600">SE</span> communities we serve, helping peoples with wide range of age, sex, and ethnic backgrounds.
       We are proud to provide a platform that that allow people to be equally served regardless of their race, heritage, and identity. Respecting diversity
-      is one of our values that guide us to fullfill the needs of the community.
+      is one of our values that guide us to fullfill the needs of our community.
       
 
     </div>
@@ -278,7 +278,8 @@ making it  <div className="m-0 p-0  z-30 text-6xl max-sm:text-5xl rounded-b-3xl 
     </section>
       
     <section className="flex z-1 sm:c2  sm:pb-60 bg-secondary  max-sm:hidden  ">
-      <div className="text-box pb-30 max-sm:hidden text-6xl flex big-text max-sm:overflow-hidden leading-13 gap-1 max-sm:m-4  justify-center items-center ">
+      <div className="text-box sm:pb-30 max-sm:hidden text-6xl flex big-text max-sm:overflow-hidden leading-13 gap-1 max-sm:m-4  justify-center items-center ">
+       <h1>Your Path to Wellness Made </h1> 
        </div>
       
       <div className="image-box max-sm:hidden"></div>
