@@ -7,8 +7,9 @@ const page = () => {
 
 
 
-
-<div className="flex justify-center ">
+return(
+  
+<div className="flex flex-row PARENT ">
 
   
   <div class="IMAGE-DIVIDER">
@@ -86,6 +87,7 @@ const page = () => {
 
 
 
+)
 
 
 

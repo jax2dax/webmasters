@@ -211,7 +211,7 @@ gsap.to(txt2Ref.current,{
           </div>
           
           <div className="max-sm:flex-col" ref={i2Ref}>
-            <Image src={familyimg} height={0} width={100} alt="health care images fade" unoptimized quality={100}  className="heroimg i1" />
+            <Image src={"https://drplus.com.sg/wp-content/uploads/2023/11/drarticle-primary-health.png"} height={0} width={100} alt="health care images fade" unoptimized quality={100}  className="heroimg i1" />
             <div className="absolute left-1/2 max-sm:left-2   "> {/**border-solid border-2 */}
             
             <div ref={txt3Ref} className="flex flex-row-reverse gap-3 justify-evenly max-sm:flex-col" >
@@ -239,7 +239,7 @@ gsap.to(txt2Ref.current,{
     <section className="container " ref={c1Ref}>
         
 <div className="flex flex-wrap flex-row w-full max-sm:flex-col max-sm:w-full overflow-hidden">
-  <div className="bg  w-3/5 py-4 pb-8  border-2 border-solid rounded-sm pl-10 bg- max-sm:w-full max-sm:h-auto" >
+  <div className="bg  w-3/5 py-4 pb-8 ml-3  border-2 border-solid rounded-sm pl-10 bg- max-sm:w-full max-sm:h-auto" >
     <h1 className="mb-14">FAIR SERVICE FOR ALL</h1>
     <div className="big-text">
       Our commitment to health equality is reflected in the <span className="text-green-300">DI</span>
@@ -277,12 +277,11 @@ making it  <div className="m-0 p-0  z-30 text-6xl max-sm:text-5xl rounded-b-3xl 
 
     </section>
       
-    <section className="flex z-1 sm:pb-60 bg-secondary sm:c2 max-sm:hidden  ">
-      <div className="text-box pb-30  text-6xl flex big-text max-sm:overflow-hidden leading-13 gap-1 max-sm:m-4  justify-center items-center ">
-       <h1 className="z-10 ">Your Path to Wellness Made </h1><span className="sm:hidden text-2xl mx-auto z-5 text-green-400"> Affordable  </span> 
-      </div>
+    <section className="flex z-1 sm:c2  sm:pb-60 bg-secondary  max-sm:hidden  ">
+      <div className="text-box pb-30 max-sm:hidden text-6xl flex big-text max-sm:overflow-hidden leading-13 gap-1 max-sm:m-4  justify-center items-center ">
+       </div>
       
-      <div className="image-box"></div>
+      <div className="image-box max-sm:hidden"></div>
     </section>
 
 

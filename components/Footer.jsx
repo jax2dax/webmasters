@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
       <Separator   />
    
-         <div className="logo-z flex justify-evenly">
+         <div className="logo-z italic flex justify-evenly">
            <Logo className="logo-z"/>
           all rights reserved
          </div>

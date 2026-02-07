@@ -441,3 +441,14 @@ img {
 .logo-z {
   z-index: 0;
 }
+.IMAGE-DIVIDER {
+  width: 130px;
+  flex:3;
+  
+}
+.WESSONS-LOGO {
+ width: 70px;
+}
+.PARENT {
+  overflow-x: scroll;
+}
