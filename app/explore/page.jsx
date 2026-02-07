@@ -26,8 +26,8 @@ import {
 
 import { CardImage2 } from "../../components/CardImg2";
 import { CardSmall } from "../../components/SmallCard";
-import smilenurse from '../../public/health/smilenurseimg.jpg'
-
+import smilenurse from '../../public/health/smilenurseimg.jpg';
+import family from  '../../public/health/familyimg.jpg'
 const explore = () => {
   return (
     <>
@@ -35,30 +35,32 @@ const explore = () => {
     <PPLwave />
     <h1 className="sm:ml-20">Services</h1>
     <div className="flex  gap-2 my-3 z-0 border-b-green-300 border-t-green-300 overflow-hidden border-t-8 border-b-8  border-solid w-max-[2000px] justify-evenly items-center mt-13 py-16 color-gradient1 ">
-      <CardImage2 
-            name={"..."}
-              badge={"..."}
-              image={smilenurse}
-              description={"..."}
+      
+     <CardImage2 
+            name={"NuSpine"}
+              badge={"chiropractor"}
+              image="https://lirp.cdn-website.com/264047a3/dms3rep/multi/opt/NuSpine+-+1+Full-1920w.png"
+              description={""}
               contact={"..."}
               email={"..."}
               button={"explore services "}
-              address={"..."}
-              link={"/services"} />
+              address={"4965 Blue Diamond Rd. Ste. 115 Las Vegas, NV 89139"}
+              link={"/services"}
+               />
             <CardImage2 
-            name={"..."}
-              badge={"..."}
-              image={smilenurse}
+            name={"Advance Health Care of Henderson"}
+              badge={"Health Care"}
+              image={"https://www.ahcfacilities.com/wp-content/uploads/2024/04/AHC-Henderson-Logo-Color-01.png"}
               description={"..."}
               contact={"..."}
               email={"..."}
-              address={"..."}
+              address={"1285 E Cactus Ave, Las Vegas, NV 89183"}
               button={"explore services "}
               link={"/services"} />
               <CardImage2 
             name={"..."}
               badge={"..."}
-              image={smilenurse}
+              image={"https://s3.amazonaws.com/urgentq_production/uploads/hospital/logo/7329/CareFirst_Logo.jpg"}
               description={"..."}
               contact={"..."}
               email={"..."}

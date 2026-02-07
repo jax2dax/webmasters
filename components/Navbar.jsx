@@ -20,9 +20,9 @@ const  Navbar = () => {
     }
 
   return (
-    <div > 
+    <div className="overflow-x-hidden"> 
         
-        <nav className="bg-secondary text-secondary-foreground  p-4 gap-10 flex justify-inbetween w-full max-sm:text items-center  ">
+        <nav className="bg-secondary text-secondary-foreground  p-4 gap-10 flex justify-inbetween overflow-x-hidden scroll-0 max-sm:text items-center w-[100vw] ">
             <div className="w-3/7"><Logo size={2} /> </div>
            
             
@@ -40,7 +40,7 @@ const  Navbar = () => {
                 className=" flex items-center flex-nowrap justify-between max-sm:hidden glow-nav "
 
                 >
-                {items.label}
+               <span className="max-md:hidden">{items.label}</span> 
                 <Icons width={20} height={20} className="ml-2"/>
                 
                 
