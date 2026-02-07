@@ -19,7 +19,7 @@ const page = () => {
         That is why we decided to do the main job for people and create a hub for both information exchange and provifing service. 
         </p>
          
-          <p> By reccomending and highlighting local community health centers, we work daily to build a more supportive, inclusive, and healthy community where everyone feels seen, supported, and empowered to reach out for help when they need it. 
+          <p> By reccomending studied local community health centers, we work daily to build a more supportive, inclusive, and healthy community where everyone feels seen, supported, and empowered to reach out for help when they need it. 
      </p>
        </div>
         

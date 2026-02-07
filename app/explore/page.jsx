@@ -158,8 +158,8 @@ const explore = () => {
         <p className="max-w-[1600] ">We are looking for passionate, driven individuals who are ready to make meaningful impact. By following our values, 
           collaborating and respect we believe that we can create a better environment that grows everyday making positive changes in our community. </p>
        
-        <span className="bg-green-200 text-black hover:scale-2 px-20 text-3xl"><Link href="/apply" >Apply
-        </Link></span>
+       <Link href="/apply" > <span className="bg-green-200 text-black hover:scale-2 px-20 text-3xl">Apply
+        </span></Link>
       </div>
 
       <div className="w- my-20 h-auto border-2 border-solid hover:translate-y-1 pl-4 rounded-2xl pb-1.5 pt-0.5 mx-4"><Link href="/programs">

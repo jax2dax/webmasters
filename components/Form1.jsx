@@ -51,6 +51,11 @@ const [isSubmitted, setSubmit ] = useState(false);
       <Input id="name" required={true} autoComplete="off" placeholder="Max Well" />
       <FieldDescription>First and Last Name</FieldDescription>
     </Field>
+    <Field>
+      <FieldLabel htmlFor="email">Email</FieldLabel>
+      <Input id="email" required={true} autoComplete="off" placeholder="travisscot@gmail.com" />
+      <FieldDescription>Enter your Email</FieldDescription>
+    </Field>
 
     <Field>
       <FieldLabel htmlFor="adress">City</FieldLabel>

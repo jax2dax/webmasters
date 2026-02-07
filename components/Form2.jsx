@@ -44,7 +44,7 @@ const [isSubmitted, setSubmit ] = useState(false);
     
     <form onSubmit={submitform} className=" mx-14 my-8 mb-20 items-center max-sm:min-w-full max-sm:w-full w-[90vw] max-sm:w-[30vw]  ">
          <FieldSet>
-  <FieldLegend></FieldLegend>
+  <FieldLegend>Enter Your Message</FieldLegend>
   <FieldDescription></FieldDescription>
   <FieldGroup>
     <Field>
@@ -52,9 +52,14 @@ const [isSubmitted, setSubmit ] = useState(false);
       <Input id="name" required autoComplete="on" placeholder="Max Well" />
       <FieldDescription>First and Last Name</FieldDescription>
     </Field>
+    <Field>
+      <FieldLabel htmlFor="email">Email</FieldLabel>
+      <Input id="email" required={true} autoComplete="off" placeholder="travisscot@gmail.com" />
+      <FieldDescription>Enter your Email</FieldDescription>
+    </Field>
 
       <Field className="w-full max-w-xs">
-      <FieldLabel>Where is this service located?</FieldLabel>
+      <FieldLabel>Where are you located?</FieldLabel>
       <Select>
         <SelectTrigger>
           <SelectValue placeholder="Las Vegas, NV" />
@@ -74,7 +79,7 @@ const [isSubmitted, setSubmit ] = useState(false);
         </SelectContent>
       </Select>
       <FieldDescription>
-        Please select Other if its location is out of Nevada.
+        Please select Other if your location is out of Nevada.
       </FieldDescription>
     </Field>
     <Input id="content" required placeholder="" className=" w-full h-1/2">

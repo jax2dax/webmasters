@@ -210,7 +210,7 @@ gsap.to(txt2Ref.current,{
             <h2 className="border-solid border-2 rounded-2xl  w-50 max-sm:max-w-3/5 flex justify-center"><Link href={"/explore"}>Explore</Link></h2></div>
           </div>
           
-          <div className="max-sm:flex-col" ref={i2Ref}>
+          <div className="max-sm:flex-col " ref={i2Ref}>
             <Image src={"https://drplus.com.sg/wp-content/uploads/2023/11/drarticle-primary-health.png"} height={0} width={100} alt="health care images fade" unoptimized quality={100}  className="heroimg i1" />
             <div className="absolute left-1/2 max-sm:left-2   "> {/**border-solid border-2 */}
             
@@ -221,14 +221,14 @@ gsap.to(txt2Ref.current,{
               </div>
                </div>
           </div>
-          <div ref={i3Ref} className="max-sm:flex-col" >
+          <div ref={i3Ref} className="max-sm:flex-col bg-red-200" >
             <Lottie animationData={redheart} loop className="heroimg"/>
           <div className="absolute left-1/2  -translate-x-1/2  max-sm:flex-col  "> {/**border-solid border-2 //to check */}
           
-           <ShieldPlus  width={200} height={200} className="ml-2  text-blue-600 " ref={txt2Ref} /> {/**border-solid border-2 */}
+           <ShieldPlus  width={200} height={200} className="ml-2  text-green-600 " ref={txt2Ref} /> {/**border-solid border-2 */}
            </div>
         <div ref={txt4Ref} className="absolute left-1/2 top-55/100 ml-1 mx-auto text-green-600 text-f -translate-x-1/2 opacity-0 "><h1 className=" text-black  ">
-         <span className="text-orange-300">Find Your Essential </span>  <span  className="text-blue-400 ml-4 bg-black rounded-2xl px-2"> shield</span ></h1>
+         <span className="text-green-600">Find Your Essential </span>  <span  className="text-green-400 ml-4 bg-black rounded-2xl px-2"> shield</span ></h1>
           </div>
           </div>
       
@@ -263,7 +263,7 @@ gsap.to(txt2Ref.current,{
 <div className="text-box text-4xl pr-6 big-text leading-13 gap-1 overflow-visible max-sm:m-4">
   
 We believe that health care accessability is a neccessity, not a previlage or a luxury. Our mission is to bridge this gap and help you and the community to recieve the reliable services you deserve.
-By connecting you to health care centers that both meet your needs and fit your budget . We plan Every Day to deliver reliable service options, giving you options to choose based on your budget plan, 
+By connecting you to health care centers that both meet your needs and fit your budget . We plan every day to deliver reliable service options, giving you options to choose based on your budget plan, 
 making it  <div className="m-0 p-0  z-30 text-6xl max-sm:text-5xl rounded-b-3xl ml-0 py-4  max-sm:ml-0 max-sm:bg-none -translate-x-5px pl-4 max-sm:pl-0   max-sm:ml-0 max-sm:-translate-x-12 " ref={solotxtRef}>
   <span className="text-green-500 ml-0 pl-0 z-30" >Affordable</span><span className="text-green-400 ">!</span>
   </div>
@@ -297,7 +297,7 @@ making it  <div className="m-0 p-0  z-30 text-6xl max-sm:text-5xl rounded-b-3xl 
                   
                 </div>
                 </Link>
-            <div className="flex w-20 mx-auto applyglow justify-center text-[bold] -translate-y-1 text-[1.2rem]   adjust-explore text-[oklch(58.117% 0.11689 165.691)]">Explore</div>
+            <div className="flex w-20 mx-auto applyglow justify-center text-[bold] -translate-y-1 text-[1.2rem]  text-bold adjust-home-explore adjust-explore text-[oklch(58.117% 0.11689 165.691)]">Explore</div>
         </div>
         
     </div>
