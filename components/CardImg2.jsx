@@ -37,7 +37,7 @@ link}
   
   return (
     <>
-    <Card className="relative grow-card mx-auto min-w-20 w-full max-w-sm sm:min-w-20 pt-0">
+    <Card className="relative grow-card mx-auto min-w-20 w-full z-0 max-w-sm sm:min-w-20 pt-0">
       <div className="absolute inset-0 z-20 aspect-video bg-black/35" />
       <Image
         src={image}  

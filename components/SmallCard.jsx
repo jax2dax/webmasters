@@ -18,7 +18,7 @@ export function CardSmall(
 }
 ) {
   return (
-    <Card size="sm" className="mx-auto w-full max-w-sm ">
+    <Card size="md" className="gap-2 mx-4 my-16  w-min-[40px]  justify-evenly no-shrink overflow-x-scroll ">
       <CardHeader>
         <CardTitle>{title}</CardTitle>
         <CardDescription>

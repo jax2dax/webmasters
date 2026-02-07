@@ -33,7 +33,7 @@ const explore = () => {
     <div className="flex max-w-[100vw] justify-center mb-0 pb-0"><span className="text-8xl text-green-500 mb-0 pb-0 translate-y-11 max-sm:text-4xl font-serif max-sm:mb-7 ">Navigate what we have up!</span></div>
     <PPLwave />
     <h1 className="sm:ml-20">Services</h1>
-    <div className="flex gap-2 my-3 z-0 border-b-green-300 border-t-green-300 overflow-hidden border-t-8 border-b-8  border-solid w-max-[2000px] justify-evenly items-center mt-13 py-16 color-gradient1 ">
+    <div className="flex z-0 gap-2 my-3 z-0 border-b-green-300 border-t-green-300 overflow-hidden border-t-8 border-b-8  border-solid w-max-[2000px] justify-evenly items-center mt-13 py-16 color-gradient1 ">
       <CardImage2 
             name={"..."}
               badge={"..."}
@@ -64,7 +64,7 @@ const explore = () => {
               address={"..."}
               button={"explore services"}
               link={"/services"} 
-              className="logo-z"/>
+              className="logo-z max-sm:hidden"/>
     </div>
     
     <div className="container mx-auto  px-auto">
