@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"    //accordion from shad cn
+import { Github , Mail} from 'lucide-react';
 
 import { navItems } from "./nav-items.ts"
 
@@ -15,24 +16,34 @@ import Link from "next/link"
 const Footer = () => {
   return (
     <>
-    <div className=" flex-col overflow-hidden justify-baseline  gap-10 z-0 items-center py-[22vh] max-sm:py-[18vh] px-10 overflow-x-hidden h-1/2 bg-secondary ">
+    <div className=" z-0 h-1/2 bg-secondary pt-18 pb-4  ">
        
-        <div className="flex  justify-between gap-30 max-sm:gap-10">
-            <div className="border-solid-2  text-2xl flex-4  ">
+        <div className="flex justify-evenly">
+            <div className="border-solid-2 flex flex-col justify-evenly text-2xl  ">
              
-              <h3 className=" ">Contact</h3>
+              <h3 className="text-3xl">Contact</h3>
               <p>702-702-6767</p>
               <p>702-000-6969</p> 
-              <p></p>
+              
+                       
             </div>
-            <div className="max-sm:flex-col flex-row flex-6">{navItems.map((items)=>{ 
+             <div className="flex flex-col items-evenly justify-end gap-2">
+                            <h3 className="text-3xl">Socials</h3>
+                            <Link className="" href="https://github.com/jax2dax/webmasters"><Github  className="hover:scale-[1.1] transition-transform ease-in-out "/></Link>
+            
+                            <Link className="" href="email:healthshieldstsa@gmail.com"><Mail  className="hover:scale-[1.1] transition-transform ease-in-out "/></Link>
+                        </div>
+            <div className="">
+              <Link href="/apply" className="text-green-300 underline">Carrers</Link>
+              {navItems.map((items)=>{ 
                   const Icons = items.icon;
                   return(
                     <div className="">
+                      
                 <Link
                   key={items.label}   
                   href={items.href}  
-                  className=" flex  text-green-300 justify-center max-sm:ml-8 underline "
+                  className="   text-green-300 underline "
                   >
                   {items.label}
                 </Link>
@@ -40,9 +51,9 @@ const Footer = () => {
               )})}</div>
 
         </div>
-      <Separator orientation="vertical"  />
+      <Separator   />
    
-         <div className="flex flex-1 justify-center gap-5 logo-z mt-30 ">
+         <div className="logo-z flex justify-evenly">
            <Logo className="logo-z"/>
           all rights reserved
          </div>

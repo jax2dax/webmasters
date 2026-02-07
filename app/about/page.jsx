@@ -15,7 +15,7 @@ const page = () => {
           <Link href="/contact/#form" className="text-green-400 text-3xl underline" >Let us know your expireance on the website</Link> 
 
         </p>
-       <p>Our community Resource Hub(Name)  was created to find support in our community. Simple, clear, and welcoming for everyone.  We understand that searching for help, whether it’s healthcare, childcare, counseling, or family services can sometimes be overwhelming . That’s why we’ve brought up trusted local resources together in one easy to 
+       <p>Health Shields  was created to find support in our community. Simple, clear, and welcoming for everyone.  We understand that searching for help, whether it’s healthcare, childcare, counseling, or family services can sometimes be overwhelming . That’s why we’ve brought up trusted local resources together in one easy to 
         use platform, so individuals and families can quickly find the information they need.</p>
           <p>
           This hub serves as a central guide to services that support physical health, mental health, and strong family connections.  From local clinics and wellness programs to parenting classes and family counseling, our goal is to provide reliable, real time information that helps users make informed and confident decisions about their care and support options.

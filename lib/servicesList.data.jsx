@@ -1,7 +1,7 @@
  const serviceData = [
   {
     id: "NuSpine ",
-    name: "Samantha Health Care Center",
+    name: "NuSpine",
     badge: "chiropractor",
     image: "https://lirp.cdn-website.com/264047a3/dms3rep/multi/opt/NuSpine+-+1+Full-1920w.png",
     description:

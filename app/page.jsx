@@ -141,7 +141,7 @@ gsap.to(txt2Ref.current,{
       },
       
       y: 500, 
-      xPercent:40,
+      xPercent:30,
       duration:5,
       textColor:"#000814",
       backgroundColor:"#000814",
@@ -264,8 +264,8 @@ gsap.to(txt2Ref.current,{
   
 We believe that health care accessability is a neccessity, not a previlage or a luxury. Our mission is to bridge this gap and help you and the community to recieve the reliable services you deserve.
 By connecting you to health care centers that both meet your needs and fit your budget . We plan Every Day to deliver reliable service options, giving you options to choose based on your budget plan, 
-making it  <div className="m-0 p-0 z-30 text-6xl max-sm:text-5xl rounded-b-3xl ml-0 max-sm:ml-0 -translate-x-5px pl-4 max-sm:pl-0  py-4 max-sm:ml-0 max-sm:-translate-x-12 " ref={solotxtRef}>
-  <span className="text-green-500 z-30" >Affordable</span><span className="text-green-400 ">!</span>
+making it  <div className="m-0 p-0  z-30 text-6xl max-sm:text-5xl rounded-b-3xl ml-0 py-4  max-sm:ml-0 max-sm:bg-none -translate-x-5px pl-4 max-sm:pl-0   max-sm:ml-0 max-sm:-translate-x-12 " ref={solotxtRef}>
+  <span className="text-green-500 ml-0 pl-0 z-30" >Affordable</span><span className="text-green-400 ">!</span>
   </div>
   
 </div>
@@ -277,8 +277,8 @@ making it  <div className="m-0 p-0 z-30 text-6xl max-sm:text-5xl rounded-b-3xl m
 
     </section>
       
-    <section className="flex z-1  sm:c2 max-sm:hidden  ">
-      <div className="text-box text-6xl flex big-text max-sm:overflow-hidden leading-13 gap-1 max-sm:m-4  justify-center items-center ">
+    <section className="flex z-1 sm:pb-60 bg-secondary sm:c2 max-sm:hidden  ">
+      <div className="text-box pb-30  text-6xl flex big-text max-sm:overflow-hidden leading-13 gap-1 max-sm:m-4  justify-center items-center ">
        <h1 className="z-10 ">Your Path to Wellness Made </h1><span className="sm:hidden text-2xl mx-auto z-5 text-green-400"> Affordable  </span> 
       </div>
       
