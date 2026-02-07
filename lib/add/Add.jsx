@@ -8,9 +8,8 @@ const page = () => {
 
 
 
-<div v-if="currentPage==='affiliates'" div class="AFFILIATES-PAGE">
-    <h2>Affiliate Organizations</h2>
-    <p>{{affiliateParagraph}}</p>
+<div className="flex justify-center ">
+
   
   <div class="IMAGE-DIVIDER">
     <div class="VILLA-VALLEY-LOGO">

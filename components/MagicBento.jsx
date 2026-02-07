@@ -12,39 +12,39 @@ const MOBILE_BREAKPOINT = 768;
 const cardData = [
   {
     color: '#FF2800',  //red
-    title: 'Analytics',
-    description: 'Track user behavior',
-    label: 'Insights'
+    title: 'Diverse',
+    description: 'age, sex and ethnicity viewed equally',
+    label: 'Diversified service'
   },
   {
     color: '#c71585', //pink
-    title: 'Dashboard',
-    description: 'Centralized data view',
-    label: 'Overview'
+    title: 'Trusted',
+    description: 'Known for our trustworthyness',
+    label: 'Loyal customers'
   },
   {
     color: '#151E3D',   //blue
-    title: 'Collaboration',
-    description: 'Work together seamlessly',
-    label: 'Teamwork'
+    title: 'Reliable',
+    description: 'Our reliable service made stand out',
+    label: 'High Reputation'
   },
   {
     color: '#8A3324',  //orange
-    title: 'Automation',
-    description: 'Streamline workflows',
-    label: 'Efficiency'
+    title: 'Authentic',
+    description: 'We do things the right way',
+    label: 'Real and Transparent'
   },
   {
     color: '#4B0082',
-    title: 'Integration',
-    description: 'Connect favorite tools',
-    label: 'Connectivity'
+    title: 'Researched',
+    description: 'Legally researched information & services',
+    label: 'Plan, Explore, Assess and Review'
   },
   {
     color: '#060010',
-    title: 'Security',
-    description: 'Enterprise-grade protection',
-    label: 'Protection'
+    title: 'Affordable',
+    description: 'Profit is not our Focus',
+    label: 'Cost considered'
   }
 ];
 

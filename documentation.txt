@@ -96,3 +96,5 @@ Image urls used in building
        https://www.outcomes.com/hs-fs/hubfs/vv.jpg?width=1859&height=690&name=vv.jpg 
        https://www.advicescout.com/wp-content/uploads/2023/07/role-of-research-scientific-advancement.png
        https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWkir6XY2ZOLsWmBXausTen9DQ0exmTy7-GA&s
+       https://as2.ftcdn.net/jpg/00/96/75/65/1000_F_96756523_GA7bty5yhnfE0WqPUrnzXiYNdSBtyhg4.jpg
+       https://img.freepik.com/premium-photo/cartoon-diverse-group-healthcare-professionals_1031776-61806.jpg

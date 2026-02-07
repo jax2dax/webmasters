@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import plusimg from '../../public/health/plussign.png';
 import cartoonDoc from  '../../public/health/image.png'
-import docCartoon from '../../public/health/cartoondocimg.avif'
 import healthkit from '../../public/health/healthkitimg.jpg'
 import researchteam from '../../public/health/researchteamimg.jpeg'
 import ushealth from '../../public/health/ushealthimg.jpg'
@@ -20,7 +19,7 @@ const page = () => {
                  
           </div>
           <div className='image-box'>
-            <Image src={healthkit} width={100} height={0} alt='health images' quality={100} unoptimized></Image>
+            <Image src="https://as2.ftcdn.net/jpg/00/96/75/65/1000_F_96756523_GA7bty5yhnfE0WqPUrnzXiYNdSBtyhg4.jpg" width={100} height={0} alt='health images' quality={100} unoptimized></Image>
           </div>
     </section>
     <section className='container'>
@@ -105,8 +104,12 @@ const page = () => {
           
         
     </section>
-    <div className=' container max-w-9/10'>
-      <div className="text-box">
+   
+<section className='container' id='evaluation'>
+      <div className='image-box'> 
+          <Image src={"https://img.freepik.com/premium-photo/cartoon-diverse-group-healthcare-professionals_1031776-61806.jpg"} width={100} height={0} alt='health images' quality={100} unoptimized></Image>
+     </div>
+        <div className="text-box">
         <h2 className='mt-8 '>Behind the scenes</h2>
           <p id="evaluation" className='text-2xl'>
             We look beyond brand names and popularity, we dig deep into websites and perform a series of inspections that
@@ -117,10 +120,13 @@ const page = () => {
                We cross refer patient's complaints with official medical and health care board </p>
                <p className='text-2xl'>By referencing these testimonials with official medical records, we provide an unparallel level of
                  <span className='text-green-400'>transparency </span>and <span className='text-green-400'>insights</span>.</p>
+      
       </div>
-      <div className="image-box"></div>
-      <Image src={null} />
-    </div>
+          
+        
+    </section>
+
+      
     </>
   )
 }

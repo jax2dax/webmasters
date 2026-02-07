@@ -9,18 +9,18 @@
     contact: "+1 7024770000",
     email: "",
     address: "4965 Blue Diamond Rd. Ste. 115 Las Vegas, NV 89139",
-    website: "https://www.nuspine.com/",
+    link: "https://www.nuspine.com/",
   },
     {
     id: "Advance Health Care of Henderson",
     name: "Advance Health Care of Henderson",
     badge: "Health Care",
-    image: "https://www.ahcfacilities.com/wp-content/uploads/2023/03/advanced-healthcare-logo.svg",
+    image: "https://www.ahcfacilities.com/wp-content/uploads/2024/04/AHC-Henderson-Logo-Color-01.png",
     description:"Specializes in short-term nursing and rehabilitation. Offers private suites, 24-hour nursing care, inpatient rehabilitation...",
     contact: "+1 7024770000",
     email: "",
     address: "1285 E Cactus Ave, Las Vegas, NV 89183",
-    website: "https://www.ahcfacilities.com/henderson",
+    link: "https://www.ahcfacilities.com/henderson",
   },
     {
     id: "CareFirst Urgent Care - Vegas ",
@@ -31,7 +31,7 @@
     contact: "+1 7024770000",
     email: "",
     address: "4360 Blue Diamond Rd SUITE 103, Las Vegas, NV 89139",
-    website: " clockwisemd.com",
+    link: "https://www.carefirsturgentcares.com/locations/blue-diamond-nv/",
   },
     {
     id: "CareNow Urgent Care  ",
@@ -42,7 +42,7 @@
     contact: "+1  (702) 464-3213",
     email: "info@samanthahealth.org",
     address: "7424 S Rainbow Blvd Suite A, Las Vegas, NV 89139",
-    website: "https://www.carenow.com/locations/las-vegas/rainbow-mardon?utm_campaign=corp_listings_mgmt&utm_source=google&utm_medium=business_listing",
+    link: "https://www.carenow.com/locations/las-vegas/rainbow-mardon?utm_campaign=corp_listings_mgmt&utm_source=google&utm_medium=business_listing",
   },
    
     {
@@ -54,7 +54,7 @@
     contact: "+1 (702)470-1102",
     email: "info@samanthahealth.org",
     address: "5650 S Rainbow Blvd, Las Vegas, NV 89118",
-    website: "https://sunsetridgepost.com/",
+    link: "https://sunsetridgepost.com/",
   },
   
   {
@@ -66,7 +66,7 @@
     contact: "+1 (702)871-5005",
     email: "",
     address: "4880 S Wynn Rd., Las Vegas, NV 89103",
-    website: "https://intermountainhealthcare.org/",
+    link: "https://intermountainhealthcare.org/",
   },
   {
     id: "Oakey Health Care Center",
@@ -77,7 +77,7 @@
     contact: "+1 (702) 877-5088 ",
     email: "",
     address: " 4750 W Oakey Blvd, Las Vegas, NV 89102",
-    website: "https://www.optum.com/",
+    link: "https://www.optum.com/",
   },
   {
     id: "Southern Nevada  Health Center ",
@@ -88,7 +88,7 @@
     contact: "+1 (702) 759-1700 ",
     email: "",
     address: "123 Main St, Springfield, IL",
-    website: "https://snchc.org/",
+    link: "https://snchc.org/",
   },
   {
     id: "e7 Health ",
@@ -99,7 +99,7 @@
     contact: "+1 702-800-2723",
     email: "",
     address: "123 Main St, Springfield, IL",
-    website: "https://www.e7health.com/lasvegas/",
+    link: "https://www.e7health.com/lasvegas/",
   },
   
 ]

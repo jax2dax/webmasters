@@ -24,6 +24,7 @@ import {
 import { useEffect, useState} from "react"  ;
 import {Button} from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
+import { CheckLine } from 'lucide-react';
    
 
 const Form1 = () => {
@@ -43,7 +44,7 @@ const [isSubmitted, setSubmit ] = useState(false);
     
     <form onSubmit={submitform} className=" mx-14 my-8 mb-20 items-center max-sm:min-w-full max-sm:w-full w-[90vw] max-sm:w-[30vw]  ">
          <FieldSet>
-  <FieldLegend>Enter Your Recommendation</FieldLegend>
+  <FieldLegend></FieldLegend>
   <FieldDescription></FieldDescription>
   <FieldGroup>
     <Field>
@@ -91,8 +92,10 @@ const [isSubmitted, setSubmit ] = useState(false);
    
   )
   return (
-    <div className="w-full  flex justify-center items-center h-[50dvh]">
-      Thank You for cooperation, we will reach out to you shortly!
+    <div className="w-full  flex justify-center flex-col items-center h-[50dvh]">
+      <div className="mx-auto"> <CheckLine color="green" width={120} height={120}/></div>
+      <p>Thank You for cooperation</p> we will reach out to you shortly! 
+      
     </div>
   )
 }

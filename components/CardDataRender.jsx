@@ -19,18 +19,18 @@ export default function ServiceList() {
     <>
       <input
         type="text"
-        placeholder="search"
+        placeholder="search by name or by field"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        className="w-full h-10 rounded-2xl max-w-9/10  border-solid border-2 px-4 mt-3"
+        className="w-full ml-3 h-10 rounded-2xl max-w-9/10  border-solid border-2 px-4 mt-3"
       />
 
-      <div className="grid gap-6 max-sm:grid-cols-1 mx-5 my-10 ml-2 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 max-sm:grid-cols-1 mx-5 my-10 ml-2 sm:grid-cols-2 lg:grid-cols-3 z-0">
         {  finalData.length > 0 ? (
           finalData.map((service) => (
-            <>
+           
             <CardImage
-              key={service.index}
+              key={service.id}
               name={service.name}
               badge={service.badge}
               image={service.image}
@@ -38,10 +38,11 @@ export default function ServiceList() {
               contact={service.contact}
               email={service.email}
               address={service.address}
-              link={service.website}
+              link={service.link}
+              className="logo-z"
             />
            
-            </>
+            
             
             
             

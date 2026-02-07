@@ -427,13 +427,17 @@ img {
 }
 .adjust-explore{
   color: oklch(58.117% 0.11689 165.691);
-  font-family:monospace
+  font-family:monospace;
+
 }
 .makeshadow {
   
-  box-shadow: 0  0 0px 0px rgba(1,1,1,1);
+  box-shadow: 0  0 0px 0px var(--background);
   transition: 1.4s ease ;
 }
 .makeshadow:hover {
-  box-shadow: 0 0 0 20px rgb(0, 0, 0);
+  box-shadow: 0 0 15px 27px  var(--background);
+}
+.logo-z {
+  z-index: 0;
 }

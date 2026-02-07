@@ -18,6 +18,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"  //accordion from shad cn (added for description)
+import Link from "next/link";
 
 export function CardImage(  //custom props  
 {name,
@@ -40,7 +41,7 @@ link}
       <img
         src={image}        
         alt={name}
-        className="relative z-20 aspect-video w-full object-cover   grayscale dark:brightness-40 "
+        className="relative z-20 aspect-video w-full object-cover   "
       />
       <CardHeader>
         <CardAction>
@@ -54,7 +55,7 @@ link}
             <AccordionItem value="item-1">
               <AccordionTrigger>More...</AccordionTrigger>
               <AccordionContent>
-                {description}{contact} {email}{address}
+                <p>{description}</p><p>{contact}</p> {email}{address}
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -63,7 +64,9 @@ link}
         </CardDescription>
       </CardHeader>
       <CardFooter>
-        <Button className="w-full"><a href={link} target="_blank" />Visit</Button>
+        <a href={link} target="_blank" rel="noopener noreferrer" className="w-full ">
+          <Button className="w-full">Visit</Button>
+        </a>
       </CardFooter>
     </Card>
 

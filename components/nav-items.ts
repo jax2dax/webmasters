@@ -5,7 +5,8 @@ import {
   Phone,
   Briefcase,
   GraduationCap,
-  Compass 
+  Compass ,
+  FileCode 
 } from "lucide-react"
 
 export const navItems = [
@@ -35,6 +36,12 @@ export const navItems = [
     href: "/about",
     icon: Info,
   },
+  {
+    label: "Docs",
+    href: "/reference",
+    icon: FileCode,
+  },
+
   
 ]
 

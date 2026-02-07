@@ -37,7 +37,7 @@ const  Navbar = () => {
                
                 key={items.label}   
                 href={items.href}  
-                className=" flex items-center justify-between max-sm:hidden glow-nav "
+                className=" flex items-center flex-nowrap justify-between max-sm:hidden glow-nav "
 
                 >
                 {items.label}
@@ -58,7 +58,7 @@ const  Navbar = () => {
                     <div className="ml-2 mt-3 "><ModeToggle /></div>
                     <div className=" my-20 flex flex-col gap-4 "> {/** bg-amber-500 */}
                         {navItems.map((items)=>(
-                            <div key={items.label} className="  px-1 py-3 [backdrop-filter:blur(10px)] w-2/3 "> {/**bg-green-400  */}
+                            <div key={items.label} className="  px-1 py-3 mx-auto [backdrop-filter:blur(10px)] w-2/3 "> {/**bg-green-400  */}
                                 <Link
                                     key={items.label}   
                                     href={items.href}  
@@ -71,6 +71,7 @@ const  Navbar = () => {
                         ))}
                     </div>
             </div>
+            
     </div>
   )
 }
