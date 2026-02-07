@@ -12,21 +12,21 @@ const MOBILE_BREAKPOINT = 768;
 const cardData = [
   {
     color: '#FF2800',  //red
-    title: 'Diverse',
+    title: 'Diversified',
     description: 'age, sex and ethnicity viewed equally',
-    label: 'Diversified service'
+    label: 'Equal Service For All'
   },
   {
     color: '#c71585', //pink
     title: 'Trusted',
     description: 'Known for our trustworthyness',
-    label: 'Loyal customers'
+    label: 'Loyal Clients'
   },
   {
     color: '#151E3D',   //blue
     title: 'Reliable',
     description: 'Our reliable service made stand out',
-    label: 'High Reputation'
+    label: 'Valued with High Reputation '
   },
   {
     color: '#8A3324',  //orange
