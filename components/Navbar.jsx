@@ -63,6 +63,7 @@ const  Navbar = () => {
                                     key={items.label}   
                                     href={items.href}  
                                     className="   justify-between  "
+                                     onClick={ () => setMenuOpen(false)}
                                     >
                                     {items.label}
                                 </Link>
